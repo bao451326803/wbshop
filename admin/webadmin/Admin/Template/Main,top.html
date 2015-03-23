@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="__CSS__/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="__JS__/jquery.js"></script>
+<script type="text/javascript">
+$(function(){	
+	//顶部导航切换
+	$(".nav li a").click(function(){
+		$(".nav li a.selected").removeClass("selected")
+		$(this).addClass("selected");
+	})	
+})	
+</script>
+
+
+</head>
+
+<body style="background:url(__PUBLIC__/images/topbg.gif) repeat-x;">
+
+    <div class="topleft">
+    <a href="main.html" target="_parent"><img src="__IMG__/logo.png" title="系统首页" /></a>
+    </div>
+        
+    <ul class="nav">
+    <li><a href="<{:U('Left/defaultleft')}>" target="leftFrame" class="selected"><img src="__IMG__/icon01.png" title="控制台" /><h2>控制台</h2></a></li>
+    <li><a href="<{:U('Left/site')}>" target="leftFrame"><img src="__IMG__/icon06.png" title="设置" /><h2>设置</h2></a></li>
+    <li><a href="<{:U('Left/shop')}>"  target="leftFrame"><img src="__IMG__/icon07.png" title="商品" /><h2>商品</h2></a></li>
+    <li><a href="<{:U('Left/store')}>"  target="leftFrame"><img src="__IMG__/icon04.png" title="店铺" /><h2>店铺</h2></a></li>
+    <li><a href="<{:U('Left/member')}>" target="leftFrame"><img src="__IMG__/icon05.png" title="会员" /><h2>会员</h2></a></li>
+    <li><a href="<{:U('Left/business')}>"  target="leftFrame"><img src="__IMG__/icon02.png" title="交易" /><h2>交易</h2></a></li>
+    <li><a href="<{:U('Left/manage')}>"  target="leftFrame"><img src="__IMG__/icon06.png" title="管理" /><h2>管理</h2></a></li>
+    <li><a href="<{:U('Left/operate')}>"  target="leftFrame"><img src="__IMG__/icon06.png" title="运营" /><h2>运营</h2></a></li>
+
+    
+    </ul>
+            
+    <div class="topright">    
+    <ul>
+    <li><span><img src="__IMG__/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
+    <li><a href="#">关于</a></li>
+    <li><a href="login.html" target="_parent">退出</a></li>
+    </ul>
+     
+    <div class="user">
+    <span>admin</span>
+    <i>消息</i>
+    <b>5</b>
+    </div>    
+    
+    </div>
+
+</body>
+</html>
